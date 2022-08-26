@@ -25,7 +25,7 @@ class TableScraper:
             writer.writerows(self.results)
 
     def run(self):
-        response =self.fetch('URL')
+        response =self.fetch('SOURCE_URL')
         self.parse(response.text)
         self.to_csv()
 
